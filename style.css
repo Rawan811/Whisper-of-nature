@@ -1,0 +1,1876 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 25px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 30px;
+
+    font-size: 16px;
+}
+
+
+/* Hero Section */
+
+.hero {
+
+    height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* Hero Content */
+
+.hero-content {
+
+    max-width: 750px;
+
+    padding: 20px;
+}
+
+.small-title {
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+
+    font-size: 70px;
+
+    margin-bottom: 25px;
+}
+
+.description {
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* Explore Button */
+
+.explore-btn {
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background: white;
+
+    color: #234b3c;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* About Page */
+
+.options-section {
+    min-height: 100vh;
+
+    padding: 130px 7% 60px;
+
+    background: #f4f1e8;
+
+    text-align: center;
+}
+
+.options-section .small-title {
+    color: #56705d;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.options-section h1 {
+    color: #243d31;
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #5d6b62;
+
+    font-size: 18px;
+
+    margin-bottom: 45px;
+}
+
+
+/* Nature Options */
+
+.options-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.nature-option {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    color: #243d31;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.nature-option span {
+
+    font-size: 45px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.nature-option h2 {
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+}
+
+.nature-option p {
+
+    color: #6b756e;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+.nature-option:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .options-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .options-section h1 {
+
+        font-size: 38px;
+    }
+}
+
+/* Individual Nature Scene */
+
+.scene-page {
+
+    min-height: 100vh;
+
+    padding: 150px 7% 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(20, 45, 40, 0.55),
+            rgba(20, 45, 40, 0.65)),
+        url("https://images.unsplash.com/photo-1519692933481-e162a57d6721");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.scene-content {
+
+    max-width: 750px;
+}
+
+.scene-content h1 {
+
+    font-size: 65px;
+
+    margin: 20px 0;
+}
+
+.scene-content p {
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.back-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 14px 30px;
+
+    background: white;
+
+    color: #243d31;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+
+    transform: scale(1.05);
+}
+
+.autumn-scene {
+
+    background:
+        linear-gradient(rgba(70, 45, 20, 0.45),
+            rgba(70, 45, 20, 0.60)),
+        url("https://images.unsplash.com/photo-1507371341162-763b5e419408");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+/* Scene Introduction */
+
+.scene-intro {
+
+    padding: 140px 7% 60px;
+
+    text-align: center;
+
+    background: #f4f1e8;
+
+    color: #243d31;
+}
+
+.scene-intro h1 {
+
+    font-size: 55px;
+
+    margin: 15px 0 20px;
+}
+
+.scene-intro p:not(.small-title) {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    color: #5d6b62;
+
+    font-size: 18px;
+}
+
+
+/* Photo Gallery */
+
+.photo-gallery {
+
+    padding: 60px 7% 90px;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.photo-gallery h2 {
+
+    font-size: 40px;
+
+    color: #243d31;
+
+    margin-bottom: 10px;
+}
+
+.gallery-description {
+
+    color: #6b756e;
+
+    margin-bottom: 40px;
+}
+
+
+/* Photo Grid */
+
+.photo-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Photo Card */
+
+.photo-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.photo-card p {
+
+    padding: 15px;
+
+    margin: 0;
+
+    color: #30483b;
+
+    font-weight: bold;
+}
+
+
+/* Gallery Mobile */
+
+@media (max-width: 800px) {
+
+    .photo-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .scene-intro h1 {
+
+        font-size: 42px;
+    }
+}
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.photo-card:hover img {
+
+    transform: scale(1.06);
+}
+
+.photo-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.16);
+}
+
+/* ===== SMALL IMAGE BLOCKS ===== */
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Keep gallery images in small blocks */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery img {
+        height: 210px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+}
+
+/* ===============================
+   FULL SCREEN IMAGE VIEWER
+   =============================== */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.90);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    padding: 30px;
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    color: white;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+    z-index: 10000;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.1);
+}
+
+/* =========================================
+   CHOOSE YOUR SCENE - CARD DESIGN
+   ========================================= */
+
+.choose-scene .card:nth-child(1) {
+    background: linear-gradient(135deg, #607d8b, #90a4ae);
+}
+
+.choose-scene .card:nth-child(2) {
+    background: linear-gradient(135deg, #9a5b2f, #d08a45);
+}
+
+.choose-scene .card:nth-child(3) {
+    background: linear-gradient(135deg, #477052, #82a878);
+}
+
+.choose-scene .card:nth-child(4) {
+    background: linear-gradient(135deg, #163d2b, #356447);
+}
+
+.choose-scene .card:nth-child(5) {
+    background: linear-gradient(135deg, #15506f, #3183a6);
+}
+
+.choose-scene .card:nth-child(6) {
+    background: linear-gradient(135deg, #a65345, #dc8955);
+}
+
+/* =========================================
+   CHOOSE YOUR SCENE - CARD STYLING
+   ========================================= */
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+
+/* All Nature Cards */
+
+.nature-option {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    min-height: 210px;
+    padding: 30px 25px;
+
+    border-radius: 24px;
+
+    text-decoration: none;
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Remove old background/design */
+
+.nature-option span {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+
+/* Heading */
+
+.nature-option h2 {
+    position: relative;
+    z-index: 2;
+
+    margin: 5px 0 10px;
+
+    font-size: 24px;
+}
+
+
+/* Description */
+
+.nature-option p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* Hover */
+
+.nature-option:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================
+   RAINY SEASON
+   ========================================= */
+
+.nature-option:nth-child(1) {
+    background: linear-gradient(135deg,
+            #526b7a,
+            #78909c);
+}
+
+
+/* Rainy decorative top */
+
+.nature-option:nth-child(1)::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background: #b7c9d1;
+}
+
+
+/* =========================================
+   AUTUMN SEASON
+   ========================================= */
+
+.nature-option:nth-child(2) {
+    background: linear-gradient(135deg,
+            #8f4f28,
+            #c87938);
+}
+
+
+/* Autumn decorative top */
+
+.nature-option:nth-child(2)::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background: #e0a052;
+}
+
+
+/* =========================================
+   MOUNTAIN VIEWS
+   ========================================= */
+
+.nature-option:nth-child(3) {
+    background: linear-gradient(135deg,
+            #416b48,
+            #78a06b);
+}
+
+
+/* Mountain decorative top */
+
+.nature-option:nth-child(3)::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background: #a7c58d;
+}
+
+
+/* =========================================
+   FORESTS
+   ========================================= */
+
+.nature-option:nth-child(4) {
+    background: linear-gradient(135deg,
+            #123b28,
+            #285b3c);
+}
+
+
+/* Forest decorative top */
+
+.nature-option:nth-child(4)::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background: #527b58;
+}
+
+
+/* =========================================
+   WATERFALLS
+   ========================================= */
+
+.nature-option:nth-child(5) {
+    background: linear-gradient(135deg,
+            #164b68,
+            #287fa2);
+}
+
+
+/* Waterfall decorative top */
+
+.nature-option:nth-child(5)::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background: #75bdd5;
+}
+
+
+/* =========================================
+   SUNSETS
+   ========================================= */
+
+.nature-option:nth-child(6) {
+    background: linear-gradient(135deg,
+            #9d5146,
+            #d58655);
+}
+
+
+/* Sunset decorative top */
+
+.nature-option:nth-child(6)::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background: #f0b66c;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .options-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .options-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nature-option {
+        min-height: 180px;
+    }
+
+}
+
+/* ============================= */
+/* HISTORY PAGE */
+/* ============================= */
+
+.history-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.history-section .small-title {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+
+.history-section h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.history-section .intro {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* Individual history sections */
+
+.history-item {
+    text-align: left;
+    margin: 35px 0;
+    padding: 30px 35px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Headings */
+
+.history-item h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.history-item p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* Poetry */
+
+.history-item .poetry {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-left: 4px solid currentColor;
+    font-style: italic;
+    opacity: 0.85;
+}
+
+
+/* Different nature styles */
+
+.history-item:nth-of-type(3) {
+    background: linear-gradient(135deg,
+            #eaf5f8,
+            #f5f8f9);
+}
+
+.history-item:nth-of-type(4) {
+    background: linear-gradient(135deg,
+            #fff0dc,
+            #f8dfbd);
+}
+
+.history-item:nth-of-type(5) {
+    background: linear-gradient(135deg,
+            #e7f1e5,
+            #f5f8ed);
+}
+
+.history-item:nth-of-type(6) {
+    background: linear-gradient(135deg,
+            #dfece2,
+            #edf5ed);
+}
+
+.history-item:nth-of-type(7) {
+    background: linear-gradient(135deg,
+            #dceaf4,
+            #edf5fa);
+}
+
+.history-item:nth-of-type(8) {
+    background: linear-gradient(135deg,
+            #ffe0bd,
+            #ffd1d9);
+}
+
+
+/* Back button */
+
+.history-section .back-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.history-section .back-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ================================= */
+/* HISTORY - AESTHETIC NATURE PAGE */
+/* ================================= */
+
+.history-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 25px 90px;
+}
+
+
+/* ================= */
+/* HERO SECTION */
+/* ================= */
+
+.history-hero {
+    position: relative;
+    text-align: center;
+    padding: 65px 35px;
+    margin-bottom: 70px;
+
+    background: linear-gradient(135deg,
+            #f4f1e8,
+            #e8f1e7);
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.history-hero h1 {
+    font-size: 48px;
+    margin: 12px 0 20px;
+}
+
+.history-hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.history-small-title {
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    font-weight: bold;
+    opacity: 0.65;
+}
+
+.leaf-decoration {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    font-size: 35px;
+    transform: rotate(-20deg);
+}
+
+.hero-leaves {
+    margin-top: 25px;
+    font-size: 23px;
+    letter-spacing: 8px;
+}
+
+
+/* ================= */
+/* STORY SECTIONS */
+/* ================= */
+
+.history-story {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    margin-bottom: 55px;
+    padding: 28px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+
+    transition: 0.35s ease;
+}
+
+.history-story:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= */
+/* IMAGE */
+/* ================= */
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    display: block;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= */
+/* CONTENT */
+/* ================= */
+
+.story-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.season-icon {
+    font-size: 35px;
+}
+
+.story-content h2 {
+    font-size: 32px;
+    margin: 10px 0 18px;
+}
+
+.special-lines {
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.poetry {
+    margin-top: 25px;
+
+    padding: 18px 20px;
+
+    border-left: 4px solid currentColor;
+
+    font-style: italic;
+    line-height: 1.7;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border-radius: 0 15px 15px 0;
+}
+
+
+/* ================= */
+/* NATURE COLORS */
+/* ================= */
+
+
+/* Rain */
+.rainy-story {
+    background: linear-gradient(135deg,
+            #e5f0f5,
+            #f3f6f7);
+
+    color: #405d6b;
+}
+
+
+/* Autumn */
+.autumn-story {
+    background: linear-gradient(135deg,
+            #fff0d9,
+            #f5d5ad);
+
+    color: #875a32;
+}
+
+
+/* Mountains */
+.mountain-story {
+    background: linear-gradient(135deg,
+            #e4f0e3,
+            #d4e5d2);
+
+    color: #41634a;
+}
+
+
+/* Forest */
+.forest-story {
+    background: linear-gradient(135deg,
+            #dce9df,
+            #c8dccd);
+
+    color: #285238;
+}
+
+
+/* Waterfall */
+.waterfall-story {
+    background: linear-gradient(135deg,
+            #dcecf4,
+            #c6dce8);
+
+    color: #24536b;
+}
+
+
+/* Sunset */
+.sunset-story {
+    background: linear-gradient(135deg,
+            #ffe2c5,
+            #f7cbd2);
+
+    color: #864d45;
+}
+
+
+/* ================= */
+/* BACK BUTTON */
+/* ================= */
+
+.history-back-btn {
+    display: block;
+
+    width: fit-content;
+
+    margin: 20px auto 0;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease;
+}
+
+.history-back-btn:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media (max-width: 750px) {
+
+    .history-page {
+        padding: 45px 15px;
+    }
+
+    .history-hero {
+        padding: 45px 20px;
+    }
+
+    .history-hero h1 {
+        font-size: 35px;
+    }
+
+    .history-story {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .story-image {
+        width: 100%;
+    }
+
+    .story-image img {
+        height: 250px;
+    }
+
+    .story-content {
+        width: 100%;
+    }
+
+    .story-content h2 {
+        font-size: 27px;
+    }
+
+}
+
+/* ================================= */
+/* GALLERY PAGE */
+/* ================================= */
+
+.gallery-page {
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 25px 90px;
+}
+
+
+/* ================= */
+/* GALLERY HERO */
+/* ================= */
+
+.gallery-hero {
+    position: relative;
+    text-align: center;
+    padding: 65px 30px;
+    margin-bottom: 55px;
+
+    background: linear-gradient(135deg,
+            #f1f5ed,
+            #eee8df);
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-small-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    opacity: 0.65;
+}
+
+.gallery-hero h1 {
+    font-size: 48px;
+    margin: 12px 0 18px;
+}
+
+.gallery-hero p {
+    max-width: 680px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.gallery-leaf {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 35px;
+    transform: rotate(-20deg);
+}
+
+.gallery-decoration {
+    margin-top: 25px;
+    font-size: 22px;
+    letter-spacing: 7px;
+}
+
+
+/* ================= */
+/* FEATURED IMAGE */
+/* ================= */
+
+.featured-nature {
+    position: relative;
+    height: 430px;
+    margin-bottom: 70px;
+
+    border-radius: 30px;
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.featured-nature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+.featured-nature:hover img {
+    transform: scale(1.04);
+}
+
+.featured-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 45px 35px 30px;
+
+    background: linear-gradient(transparent,
+            rgba(0, 0, 0, 0.75));
+
+    color: white;
+}
+
+.featured-text span {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.featured-text h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.featured-text p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* ================= */
+/* GALLERY HEADING */
+/* ================= */
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.gallery-heading p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.gallery-heading h2 {
+    font-size: 35px;
+    margin-top: 8px;
+}
+
+
+/* ================= */
+/* PHOTO GRID */
+/* ================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    grid-auto-rows: 250px;
+
+    gap: 20px;
+}
+
+
+/* Individual picture */
+
+.gallery-photo {
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+
+    cursor: pointer;
+}
+
+
+/* Different sizes */
+
+.gallery-photo:nth-child(1) {
+    grid-row: span 2;
+}
+
+.gallery-photo:nth-child(4) {
+    grid-column: span 2;
+}
+
+.gallery-photo:nth-child(6) {
+    grid-row: span 2;
+}
+
+
+/* Images */
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.gallery-photo:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ================= */
+/* IMAGE OVERLAY */
+/* ================= */
+
+.photo-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 35px 20px 20px;
+
+    color: white;
+
+    background: linear-gradient(transparent,
+            rgba(0, 0, 0, 0.78));
+
+    transform: translateY(8px);
+
+    transition: 0.35s ease;
+}
+
+.gallery-photo:hover .photo-overlay {
+    transform: translateY(0);
+}
+
+.photo-overlay span {
+    font-size: 24px;
+}
+
+.photo-overlay h3 {
+    margin: 5px 0;
+
+    font-size: 21px;
+}
+
+.photo-overlay p {
+    margin: 0;
+
+    font-size: 14px;
+
+    opacity: 0.9;
+}
+
+
+/* ================= */
+/* QUOTE */
+/* ================= */
+
+.gallery-quote {
+    text-align: center;
+
+    margin-top: 75px;
+
+    padding: 50px 30px;
+
+    background: #f5f1e9;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-quote span {
+    font-size: 55px;
+    line-height: 20px;
+}
+
+.gallery-quote p {
+    max-width: 650px;
+
+    margin: 15px auto;
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+}
+
+.gallery-quote small {
+    opacity: 0.6;
+}
+
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media (max-width: 750px) {
+
+    .gallery-page {
+        padding: 45px 15px;
+    }
+
+    .gallery-hero {
+        padding: 45px 20px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 35px;
+    }
+
+    .featured-nature {
+        height: 330px;
+    }
+
+    .featured-text h2 {
+        font-size: 25px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 280px;
+    }
+
+    .gallery-photo:nth-child(1),
+    .gallery-photo:nth-child(4),
+    .gallery-photo:nth-child(6) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+}
+
+/* ================================= */
+/* NATURE MOODS */
+/* ================================= */
+
+.nature-moods {
+    text-align: center;
+
+    margin: 75px 0 55px;
+
+    padding: 50px 25px;
+
+    background: linear-gradient(135deg,
+            #f1f5ed,
+            #f8f0e7);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.mood-small {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    opacity: 0.6;
+}
+
+.nature-moods h2 {
+    font-size: 30px;
+
+    margin: 10px 0 30px;
+}
+
+.mood-items {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.mood-items div {
+    min-width: 110px;
+
+    padding: 18px 15px;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s ease;
+}
+
+.mood-items div:hover {
+    transform: translateY(-6px);
+}
+
+.mood-items span {
+    font-size: 30px;
+}
+
+.mood-items p {
+    margin: 8px 0 0;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    .nature-moods {
+        padding: 40px 15px;
+    }
+
+    .nature-moods h2 {
+        font-size: 25px;
+    }
+
+    .mood-items {
+        gap: 12px;
+    }
+
+    .mood-items div {
+        min-width: 90px;
+    }
+
+}
+
+/* ========================= */
+/* HOME HERO - NEW BACKGROUND */
+/* ========================= */
+
+.hero {
+    background-image:
+        linear-gradient(rgba(20, 35, 28, 0.25),
+            rgba(20, 35, 28, 0.25)),
+        url("images/hero-forest.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* ========================= */
+/* NEW HOME HERO BACKGROUND  */
+/* ========================= */
+
+.hero {
+    position: relative;
+    min-height: 85vh;
+
+    background:
+        linear-gradient(rgba(35, 55, 43, 0.35),
+            rgba(20, 35, 28, 0.45)),
+        linear-gradient(135deg,
+            #b8cdbb,
+            #78977e,
+            #3f6049,
+            #263d30);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* Soft sunlight effect */
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    top: -120px;
+    right: 5%;
+
+    background: rgba(255, 244, 200, 0.25);
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+}
+
+
+/* Light mist */
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 45%;
+
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(transparent,
+            rgba(230, 240, 231, 0.18));
+
+    pointer-events: none;
+}
+
+
+/* Keep text above background */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
